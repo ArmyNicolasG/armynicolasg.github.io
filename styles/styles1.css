@@ -3,7 +3,7 @@
     --secondary-page-color: white;
     --shadow-color: black;
 }
-* {
+*{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
@@ -15,7 +15,6 @@ body{
     top: 20%;
     width: 100%;
 }
-/*NAV*/
 .top-menu h1{
     margin-top: auto;
     margin-bottom: auto;
@@ -58,7 +57,6 @@ body{
     background-color: rgb(200, 200, 200);
     cursor: pointer;
 }
-/*BODY*/
 .title1Body{
     color: var(--secondary-page-color);
     text-align: center;
@@ -117,9 +115,6 @@ body{
 .body-main__box-desc-container hr{
     margin-bottom: 8.5px;
 }
-
-
-/*BODY-TWO*/
 .body-two{
     background-color: var(--secondary-page-color);
     padding-top: 2em;
@@ -150,23 +145,16 @@ user-select: none;
     padding: 10px;
     max-width: 20em;
 }
-
-/*CAJA 1 BODY-TWO*/
 #body-two__box1-img{
     content: url('../images/logo-portafolio.png');
     height: 15em;
     width: 15em;
 }
-
-
-/* CAJA 2 BODY-TWO*/
 #body-two__box2-img{
     content: url('../images/desarrollo-economico.jpg');
     height: 15em;
     width: 15em;
 }
-/*Footer*/
-
 footer{
     background-color: var(--main--page-color);
     padding: 1em;
@@ -192,7 +180,6 @@ footer *{
         margin-bottom: 1em;
         margin-top: 1em;
     }
-    /*BODY-TWO*/
     .body-two__box{
         max-width: 85%;
     }
