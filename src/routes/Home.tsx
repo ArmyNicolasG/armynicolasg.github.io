@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -11,9 +11,18 @@ const navigation = [
 
 export default function Home () {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isShowingBeam, setIsShowingBeam] = useState(false)
+
+  useEffect(() => {
+
+    setInterval(() => {
+      setIsShowingBeam(!isShowingBeam)  
+    }, 300)
+
+  }, [])
 
   return (
-    <div className="bg-black">
+    <div>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -22,8 +31,8 @@ export default function Home () {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-teal-301 sm:text-6xl">
-             This is Nicolás.
+            <h1 className="text-4xl font-bold tracking-tight text-green-400 sm:text-6xl">
+             This is Nicolás.{ (isShowingBeam) ? "|" : "" }
             </h1>
             <p className="mt-6 text-lg leading-8 text-white">
               I am a Full-Stack Developer who loves coding and wants to learn new things everyday about Tech industry and how computers work, from a single script to the electronical bits that let this page to be shown to everyone travelling through wires.
@@ -35,7 +44,7 @@ export default function Home () {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-teal-301">
+              <a href="#" className="text-sm font-semibold leading-6 text-green-400">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

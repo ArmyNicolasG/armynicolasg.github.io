@@ -3,8 +3,6 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-
-
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
@@ -32,7 +30,7 @@ export default function NavBar() {
                    <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-400"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -41,13 +39,13 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-teal-400">
+              <a key={item.name} href={item.href} className="text-2xl font-semibold leading-6 text-green-400">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-teal-401">
+            <a href="https://github.com/ArmyNicolasG" className="text-2xl font-semibold leading-6 text-teal-401">
               GitHub Profile <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
