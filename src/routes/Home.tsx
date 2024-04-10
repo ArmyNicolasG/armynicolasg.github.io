@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { FaGithub } from "react-icons/fa";
 
 export default function Home () {
 
@@ -7,7 +8,7 @@ export default function Home () {
   const [desc, setDesc] = useState("")
 
   useEffect(() => {
-    const newTitle = 'c onsole.log("It\'s me.")';
+    const newTitle = 'c onsole.log("It\'s me.");';
     const newDesc = " I am a Full-Stack Developer who loves coding and learning how computers and electronics work under the hood.";
   
     let indexTitle = 0;
@@ -48,7 +49,7 @@ export default function Home () {
 
   return (
     <div>
-      <div className="relative bg-black isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -64,13 +65,13 @@ export default function Home () {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+                href="https://github.com/ArmyNicolasG/"
+                className="rounded-md bg-green-400 px-3.5 py-2.5 text-5xl font-semibold text-black shadow-sm hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
               >
-                Get started
+                <FaGithub />
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-green-400">
-                Learn more <span aria-hidden="true">→</span>
+              <a href="#" className="text-xl font-semibold text-green-400">
+                Projects <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

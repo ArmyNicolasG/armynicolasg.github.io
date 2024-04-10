@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-     <div className="from-purple-600 to-blue-600">
+     <div className="h-screen bg-gradient-to-b from-black to-gray-800">
       <NavBar />
       <Outlet />
      </div>

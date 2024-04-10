@@ -3,10 +3,10 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Certifications', href: '#' },
+  { name: 'Projects', href: '#' },
+  { name: 'Skills', href: '#' },
 ]
 
 export default function NavBar() {
@@ -21,7 +21,7 @@ export default function NavBar() {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="../assets/my-pic.svg"
                 alt=""
               />
             </a>
@@ -39,13 +39,13 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400">
+              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400 hover:text-white">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://github.com/ArmyNicolasG" className="text-2xl font-semibold leading-6 text-teal-401">
+            <a href="https://github.com/ArmyNicolasG" className="hidden text-2xl font-semibold leading-6 text-green-400">
               GitHub Profile <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
