@@ -7,7 +7,32 @@
   
     html {
       font-family: 'IBM Plex Sans', sans-serif;
-      background-color: black;
+      background-attachment: fixed;
+      background-image: linear-gradient(
+  180deg,
+  hsl(0deg 0% 0%) 14%,
+  hsl(150deg 100% 0%) 41%,
+  hsl(150deg 100% 1%) 52%,
+  hsl(150deg 100% 1%) 61%,
+  hsl(150deg 100% 2%) 67%,
+  hsl(150deg 100% 2%) 73%,
+  hsl(145deg 100% 2%) 77%,
+  hsl(146deg 100% 3%) 81%,
+  hsl(146deg 100% 3%) 85%,
+  hsl(147deg 100% 4%) 87%,
+  hsl(147deg 100% 4%) 90%,
+  hsl(149deg 100% 4%) 92%,
+  hsl(149deg 100% 5%) 94%,
+  hsl(149deg 100% 5%) 96%,
+  hsl(149deg 100% 5%) 98%,
+  hsl(149deg 100% 6%) 99%,
+  hsl(147deg 100% 6%) 100%,
+  hsl(147deg 100% 6%) 101%,
+  hsl(147deg 100% 7%) 101%,
+  hsl(148deg 100% 7%) 102%,
+  hsl(148deg 100% 8%) 102%,
+  hsl(148deg 100% 8%) 101%
+); 
     }
 
 }

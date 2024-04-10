@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaGithub } from "react-icons/fa";
 import NavBar from '../../../components/NavBar'
+import { Transition } from '@headlessui/react'
 
 export default function WelcomeMessage () {
 
@@ -32,13 +33,13 @@ export default function WelcomeMessage () {
             setShowInfo(true)
             const beamInterval = setInterval(() => {
                 setBeam(prevBeam => (prevBeam === "|" ? " " : "|"));
-              }, 700);
+              }, 500);
             return () => clearInterval(beamInterval);
           }
-        }, 12);
+        }, 10);
         return () => clearInterval(descInterval);
       }
-    }, 150);
+    }, 75);
     return () => clearInterval(titleInterval);
   }, []);
 
@@ -46,7 +47,7 @@ export default function WelcomeMessage () {
 
   const infoContent = 
     <>
-        <div className="transition all ease-in-out duration 200 mt-10 flex items-center justify-center gap-x-6">
+        <div className="mt-10 flex items-center justify-center gap-x-6">
         <a
             href="https://github.com/ArmyNicolasG/"
             className="rounded-md bg-green-400 px-3.5 py-2.5 text-5xl font-semibold text-black shadow-sm hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
@@ -55,21 +56,29 @@ export default function WelcomeMessage () {
         </a>
         
         </div>
-        <button className="mt-12 text-xl font-semibold text-green-400 hover:text-white hover:scale-105 transition all ease-in-out duration-200">
+        <button className="mt-12 text-xl text-white hover:scale-105 transition-all ease-in-out duration-300">
             More about me <span aria-hidden="true">↓</span>
         </button>
-    </>
+    </>;
 
   return (
-    <div>
-        {showInfo && <NavBar />}
+    <div> 
+        {
+          showInfo &&
+          <Transition
+            appear={true}
+            show={ showInfo }
+            enter="transition-all duration-700 ease-in-out"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+          >
+            <NavBar/>
+          </Transition>        
+          }
       <div className="relative select-none isolate px-6 pt-14 lg:px-8">
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
+        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         </div>
-        <div className="mx-auto max-w-2xl py-24 sm:py-34 lg:py-42">
+        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-42">
           <div className="text-center">
             <h1 className="break-normal text-2xl font-bold tracking-tight text-green-400 sm:text-5xl">
              { title }{ beam }
@@ -78,7 +87,17 @@ export default function WelcomeMessage () {
               { desc }
             </p>
             
-            { showInfo && infoContent }
+            { showInfo &&
+            <Transition
+              appear={ true }
+              show={ showInfo }
+              enter="transition-all duration-700 ease-in-out"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+            >
+              { infoContent } 
+            </Transition>
+            }
 
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaGithub } from "react-icons/fa";
+import myPics from '../assets/ImgProvider.tsx'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -15,17 +16,13 @@ export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <header className="select-none fixed bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
+      <header className="select-none fixed left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                   <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only text-white">Nicolás Galeano Portfolio.</span>
-              <img
-                className="h-8 w-auto"
-                src="../../assets/my-pic.svg"
-                alt="Nicolas G photo"
-              />
-            </a>
+              <img src={ myPics.myPic } className="w-16 h-auto rounded-full"/>
+             </a>
           </div>
 
                    <div className="flex lg:hidden">
@@ -40,7 +37,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400 hover:text-white">
+              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400 hover:text-white hover:bg-green-400">
                 {item.name}
               </a>
             ))}
@@ -58,8 +55,8 @@ export default function NavBar() {
               <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Nicolás Galeano Portfolio.</span>
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="w-16 h-auto rounded-full"
+                  src={ myPics.myPic }
                   alt="Nicolas G photo."
                 />
               </a>
@@ -79,7 +76,7 @@ export default function NavBar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-green-400 hover:bg-gray-50 hover:text-black"
+                      className="-mx-3 block rounded-lg px-3 py-2 leading-7 text-green-400 hover:bg-white hover:text-black"
                     >
                       {item.name}
                     </a>
@@ -88,7 +85,7 @@ export default function NavBar() {
                 <div className="py-6">
                   <a
                     href="https://github.com/ArmyNicolasG"
-                    className="-mx-3 text-l block rounded-lg px-3 py-2.5 font-semibold leading-7 text-green-400 hover:bg-gray-50"
+                    className="-mx-3 text-l block rounded-lg px-3 py-2.5 font-semibold leading-7 text-green-400 hover:text-black hover:bg-white"
                   >
                     GitHub Profile <FaGithub />
                   </a>
