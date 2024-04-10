@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { FaGithub } from "react-icons/fa";
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Certifications', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Certifications', href: '/certifications' },
   { name: 'Projects', href: '#' },
   { name: 'Skills', href: '#' },
 ]
@@ -17,12 +18,12 @@ export default function NavBar() {
       <header className="select-none fixed bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                   <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only text-white">Nicolás Galeano Portfolio.</span>
               <img
                 className="h-8 w-auto"
-                src="../assets/my-pic.svg"
-                alt=""
+                src="../../assets/my-pic.svg"
+                alt="Nicolas G photo"
               />
             </a>
           </div>
@@ -33,7 +34,7 @@ export default function NavBar() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-400"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -46,7 +47,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="https://github.com/ArmyNicolasG" className="hidden text-2xl font-semibold leading-6 text-green-400">
-              GitHub Profile <span aria-hidden="true">&rarr;</span>
+              GitHub Profile<span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -54,12 +55,12 @@ export default function NavBar() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+              <a href="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Nicolás Galeano Portfolio.</span>
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                  alt="Nicolas G photo."
                 />
               </a>
               <button
@@ -78,7 +79,7 @@ export default function NavBar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-green-400 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-green-400 hover:bg-gray-50 hover:text-black"
                     >
                       {item.name}
                     </a>
@@ -87,9 +88,9 @@ export default function NavBar() {
                 <div className="py-6">
                   <a
                     href="https://github.com/ArmyNicolasG"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 font-semibold leading-7 text-green-400 hover:bg-gray-50"
+                    className="-mx-3 text-l block rounded-lg px-3 py-2.5 font-semibold leading-7 text-green-400 hover:bg-gray-50"
                   >
-                    GitHub Profile
+                    GitHub Profile <FaGithub />
                   </a>
                 </div>
               </div>

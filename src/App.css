@@ -7,10 +7,7 @@
   
     html {
       font-family: 'IBM Plex Sans', sans-serif;
-    }
-
-    #root{
-      background-color: linear-gradient(black, green)
+      background-color: black;
     }
 
 }
