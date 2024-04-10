@@ -14,7 +14,7 @@ export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <header className="fixed top-0 bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0 z-50">
+      <header className="fixed bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                   <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -39,7 +39,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-2xl font-semibold leading-6 text-green-400">
+              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400">
                 {item.name}
               </a>
             ))}
@@ -64,7 +64,7 @@ export default function NavBar() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-teal-301"
+                className="-m-2.5 rounded-md p-2.5 text-green-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -78,7 +78,7 @@ export default function NavBar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-teal-301 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 text-green-400 hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -87,7 +87,7 @@ export default function NavBar() {
                 <div className="py-6">
                   <a
                     href="https://github.com/ArmyNicolasG"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-teal-401 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 font-semibold leading-7 text-green-400 hover:bg-gray-50"
                   >
                     GitHub Profile
                   </a>

@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-     <div>
+     <div className="from-purple-600 to-blue-600">
       <NavBar />
       <Outlet />
      </div>
