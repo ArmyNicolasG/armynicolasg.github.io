@@ -69,7 +69,7 @@ export default function WelcomeMessage () {
           aria-hidden="true"
         >
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-24 sm:py-34 lg:py-42">
           <div className="text-center">
             <h1 className="break-normal text-2xl font-bold tracking-tight text-green-400 sm:text-5xl">
              { title }{ beam }
