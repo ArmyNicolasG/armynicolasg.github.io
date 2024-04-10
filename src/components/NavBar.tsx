@@ -14,7 +14,7 @@ export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <header className="fixed bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
+      <header className="select-none fixed bg-black left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                   <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaGithub } from "react-icons/fa";
 
-export default function Home () {
+export default function WelcomeMessage () {
 
   const [beam, setBeam] = useState(" ")
   const [title, setTitle] = useState("")
@@ -70,7 +70,7 @@ export default function Home () {
               >
                 <FaGithub />
               </a>
-              <a href="#" className="text-xl font-semibold text-green-400">
+              <a href="#" className="text-xl font-semibold hover:text-white text-green-400">
                 Projects <span aria-hidden="true">→</span>
               </a>
             </div>
