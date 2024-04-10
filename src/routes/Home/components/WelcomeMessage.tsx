@@ -16,7 +16,7 @@ export default function WelcomeMessage () {
     let indexTitle = 0;
     const titleInterval = setInterval(() => {
       if (indexTitle < newTitle.length - 1) {
-        if(indexTitle == newTitle.length - 2) setTitle(prevTitle => prevTitle.replace(/.$/, ''))
+        if(indexTitle == newTitle.length - 2) setTitle(newTitle)
         else setTitle(prevTitle => prevTitle.replace(/.$/, '') + `${newTitle[indexTitle]}|`)
         indexTitle++;
       } else {
