@@ -7,34 +7,35 @@ export default function Home () {
   const [desc, setDesc] = useState("")
 
   useEffect(() => {
-    const newTitle = ' console.log("It\'s me.")';
-    const newDesc = "I  am a Full-Stack Developer who loves coding, learning new things everyday about IT and electronics industry and how computers work under the hood.";
+    const newTitle = 'c onsole.log("It\'s me.")';
+    const newDesc = " I am a Full-Stack Developer who loves coding and learning how computers and electronics work under the hood.";
+  
     let indexTitle = 0;
     const titleInterval = setInterval(() => {
-      if (indexTitle < (newTitle.length - 1)) {
+      if (indexTitle < newTitle.length - 1) {
         setTitle(prevTitle => `${prevTitle}${newTitle[indexTitle]}`);
         indexTitle++;
-      } 
-      else () => {
-          clearInterval(titleInterval);
-        }
-    }, 150);
-
-    let indexDesc = 0;
-    const descInterval = setInterval(() => {
-      if (indexDesc < (newDesc.length - 1)) {
-        setDesc(prevDesc => `${prevDesc}${newDesc[indexDesc]}`);
-        indexDesc++;
-      } else clearInterval(descInterval);
-    }, 40);
-    
-    return () => {
-      clearInterval(titleInterval)
-      clearInterval(descInterval);
-    }
-
-  }, []);
+      } else {
+        clearInterval(titleInterval);
   
+        let indexDesc = 0;
+        const descInterval = setInterval(() => {
+          if (indexDesc < newDesc.length - 1) {
+            setDesc(prevDesc => `${prevDesc}${newDesc[indexDesc]}`);
+            indexDesc++;
+          } else {
+            clearInterval(descInterval);
+          }
+        }, 38);
+  
+        // Clear the descInterval when unmounting
+        return () => clearInterval(descInterval);
+      }
+    }, 150);
+  
+    // Clear the titleInterval when unmounting
+    return () => clearInterval(titleInterval);
+  }, []);
 
   useEffect(() => {
     // Blinking Beam
