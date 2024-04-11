@@ -24,7 +24,6 @@ export default function NavBar() {
               <img src="./media/navbarfoto.jpg" className="w-16 h-auto rounded-full"/>
              </a>
           </div>
-
                    <div className="flex lg:hidden">
             <button
               type="button"

@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   return (
      <>
-      <div className="mt-20 text-white h-screen">
+      <div className="mt-20 sm:mt-0 text-white h-screen">
         <Outlet />
       </div>
      </>
