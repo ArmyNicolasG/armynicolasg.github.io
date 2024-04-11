@@ -6,8 +6,8 @@ import { Transition } from '@headlessui/react'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Certifications', href: '/certifications' },
-  { name: 'Projects', href: '#' },
+  { name: 'Skills', href: '#' },
+  { name: 'Certifications', href: '#' },
   { name: 'Skills', href: '#' },
 ]
 
@@ -16,12 +16,12 @@ export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <header className="select-none fixed left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <header className="select-none bg-black fixed left-1/2 transform -translate-x-1/2 w-full z-50 top-0">
+        <nav className="flex items-center justify-between p-6 lg:px-6" aria-label="Global">
                   <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only text-white">Nicolás Galeano Portfolio.</span>
-              <img src="./media/navbarfoto.jpg" className="w-16 h-auto rounded-full"/>
+              <img src="./media/navbarfoto.jpg" className="w-14 h-auto rounded-full"/>
              </a>
           </div>
                    <div className="flex lg:hidden">
