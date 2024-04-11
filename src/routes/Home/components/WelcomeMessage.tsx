@@ -78,7 +78,7 @@ export default function WelcomeMessage () {
       <div className="relative select-none isolate px-6 pt-14 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         </div>
-        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-42">
+        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-56">
           <div className="text-center">
             <h1 className="break-normal text-2xl font-bold tracking-tight text-green-400 sm:text-5xl">
              { title }{ beam }

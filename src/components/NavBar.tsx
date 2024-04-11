@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaGithub } from "react-icons/fa";
-import myPics from '../assets/ImgProvider.tsx'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -21,7 +20,7 @@ export default function NavBar() {
                   <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only text-white">Nicolás Galeano Portfolio.</span>
-              <img src={ myPics.myPic } className="w-16 h-auto rounded-full"/>
+              <img src="./media/navbarfoto.jpg" className="w-16 h-auto rounded-full"/>
              </a>
           </div>
 
@@ -37,7 +36,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400 hover:text-white hover:bg-green-400">
+              <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-green-400 hover:text-white">
                 {item.name}
               </a>
             ))}
@@ -56,7 +55,7 @@ export default function NavBar() {
                 <span className="sr-only">Nicolás Galeano Portfolio.</span>
                 <img
                   className="w-16 h-auto rounded-full"
-                  src={ myPics.myPic }
+                  src="./media/navbarfoto.jpg"
                   alt="Nicolas G photo."
                 />
               </a>
