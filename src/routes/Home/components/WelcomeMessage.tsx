@@ -36,10 +36,10 @@ export default function WelcomeMessage () {
               }, 500);
             return () => clearInterval(beamInterval);
           }
-        }, 10);
+        }, 7);
         return () => clearInterval(descInterval);
       }
-    }, 75);
+    }, 50);
     return () => clearInterval(titleInterval);
   }, []);
 

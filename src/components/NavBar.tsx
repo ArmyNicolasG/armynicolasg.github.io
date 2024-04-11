@@ -32,7 +32,7 @@ export default function NavBar() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -67,7 +67,7 @@ export default function NavBar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="h-8 w-8" aria-hidden="true" />
               </button>
             </div>
             <Transition
