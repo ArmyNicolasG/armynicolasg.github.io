@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { FaGithub } from "react-icons/fa";
+import NavBar from '../../../components/NavBar'
 import { Transition } from '@headlessui/react'
 
-export default function WelcomeMessage ({ loadHandler }) {
+export default function WelcomeMessage () {
 
   const [beam, setBeam] = useState(" ")
   const [title, setTitle] = useState("")
@@ -32,7 +33,6 @@ export default function WelcomeMessage ({ loadHandler }) {
             setShowInfo(true)
             const beamInterval = setInterval(() => {
                 setBeam(prevBeam => (prevBeam === "|" ? " " : "|"));
-                loadHandler(true)
               }, 500);
             return () => clearInterval(beamInterval);
           }
