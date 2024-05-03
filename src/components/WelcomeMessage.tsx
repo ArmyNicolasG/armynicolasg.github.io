@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { FaGithub } from "react-icons/fa";
-import NavBar from '../../../components/NavBar'
 import { Transition } from '@headlessui/react'
 
 export default function WelcomeMessage () {
@@ -63,18 +62,7 @@ export default function WelcomeMessage () {
 
   return (
     <div> 
-        {
-          showInfo &&
-          <Transition
-            appear={true}
-            show={ showInfo }
-            enter="transition-all duration-700 ease-in-out"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-          >
-            <NavBar/>
-          </Transition>        
-          }
+        
       <div className="relative select-none isolate px-6 pt-18 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         </div>
