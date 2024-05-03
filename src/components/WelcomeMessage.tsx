@@ -11,7 +11,7 @@ export default function WelcomeMessage () {
 
   useEffect(() => {
     const newTitle = '>  console.log("It\'s me.");';
-    const newDesc = " Full-Stack Developer who loves coding and learning how computers and electronics work under the hood.";
+    const newDesc = " Full-Stack Developer who loves coding and learning how computers and electronics work under  tthe hood.";
   
     let indexTitle = 0;
     const titleInterval = setInterval(() => {

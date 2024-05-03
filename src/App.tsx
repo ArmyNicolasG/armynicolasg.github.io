@@ -1,5 +1,5 @@
 import WelcomeMessage from './components/WelcomeMessage.tsx'
-import Skills from './components/LanguageCarousel'
+import Skills from './components/Skills.tsx'
 import NavBar from './components/NavBar.tsx';
 import './App.css'
 import { useEffect, useState } from 'react';
@@ -19,7 +19,7 @@ function App() {
 
   return (
      <>
-      <div className="mt-40 lg:mt-0 text-white h-screen">
+      <div className="mt-40 lg:mt-0 text-white h-screen mb-40">
 
       { isLoaded &&
           <Transition

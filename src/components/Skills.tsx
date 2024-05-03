@@ -3,9 +3,17 @@ export default function LanguageCarousel () {
   {
     name: 'React',
     role: 'Front-End',
+    color: 'cyan',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-  }
+      '/media/react-logo.png'
+  },
+  {
+    name: 'Node',
+    role: 'Back-end',
+    color: 'green',
+    imageUrl:
+      '/media/node-logo.png'
+  },
 ]
 
   return (
@@ -21,10 +29,10 @@ export default function LanguageCarousel () {
           {skills.map((skill) => (
             <li key={skill.name}>
               <div className="flex items-center gap-x-6">
-                <img className="h-16 w-16 rounded-full" src={skill.imageUrl} alt="" />
+                <img className="h-16 w-16 " src={skill.imageUrl} alt={ `${skill.name} logo` } />
                 <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{skill.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">{skill.role}</p>
+                  <h3 className={`text-base font-semibold leading-7 text-${skill.color}-400 tracking-tight`}>{skill.name}</h3>
+                  <p className="text-sm font-semibold leading-6">{skill.role}</p>
                 </div>
               </div>
             </li>
