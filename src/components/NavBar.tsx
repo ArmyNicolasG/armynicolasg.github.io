@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Skills', href: '#' },
   { name: 'Certifications', href: '#' },
-  { name: 'Skills', href: '#' },
+  { name: 'Projects', href: '#' },
 ]
 
 export default function NavBar() {
@@ -21,7 +21,7 @@ export default function NavBar() {
                   <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only text-white">Nicolás Galeano Portfolio.</span>
-              <img src="./media/navbarfoto.jpg" className="w-14 h-auto rounded-full"/>
+              <img src="./media/navbarfoto.jpg" className="w-16 h-auto rounded-full"/>
              </a>
           </div>
                    <div className="flex lg:hidden">
