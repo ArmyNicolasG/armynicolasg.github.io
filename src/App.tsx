@@ -4,6 +4,7 @@ import './App.css'
 import { useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react'
 import LanguageCarousel from './components/skills/LanguageCarousel.tsx';
+import ProjectsGrid from './components/projects/ProjectsGrid.tsx';
 
 function App() {
 
@@ -43,7 +44,9 @@ function App() {
             enterTo="opacity-100"
           >
             <LanguageCarousel />
-          </Transition>        
+            <ProjectsGrid />
+          </Transition>  
+
       }
 
       </div>

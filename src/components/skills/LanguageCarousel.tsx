@@ -1,5 +1,5 @@
 import LanguageElement from './LanguageElement'
-import { ACCENTS } from './LanguageElement'
+import { ACCENTS } from '../types/Accents.types'
 
 export default function LanguageCarousel () {
   const skills = [
