@@ -1,9 +1,9 @@
 import WelcomeMessage from './components/WelcomeMessage.tsx'
-import Skills from './components/Skills.tsx'
 import NavBar from './components/NavBar.tsx';
 import './App.css'
 import { useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react'
+import LanguageCarousel from './components/skills/LanguageCarousel.tsx';
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
             enterFrom="opacity-0"
             enterTo="opacity-100"
           >
-            <Skills />
+            <LanguageCarousel />
           </Transition>        
       }
 
