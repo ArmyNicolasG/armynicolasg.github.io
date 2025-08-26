@@ -3,9 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { Transition } from '@headlessui/react'
 
 export default function WelcomeMessage () {
-  // Texto fijo (sin animación) para la descripción
-  const NEW_DESC = " Full-Stack Developer passionate about teamwork and continuous learning, experienced in building secure and maintainable systems with .NET and Node.js for backend and React for frontend. Skilled in designing REST APIs, architecting databases and software, and deploying solutions on AWS and Linux servers, while integrating modern DevOps practices. Comfortable working in international environments thanks to my professional proficiency in English.";
-
+  const NEW_DESC = " Full-Stack Developer with .NET, Node.js, React, and AWS/Linux. Skilled in REST APIs, architecture, DevOps, and fluent English for global teamwork.";
   const NEW_TITLE = '>  console.log("It\'s me.");';
 
   const [beam, setBeam] = useState(" ");
@@ -32,7 +30,6 @@ export default function WelcomeMessage () {
     return () => clearInterval(id);
   }, [NEW_TITLE]);
 
-  // Efecto 2: parpadeo del cursor después de terminar el título
   useEffect(() => {
     if (!showInfo) return;
     const blink = setInterval(() => {

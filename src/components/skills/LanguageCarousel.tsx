@@ -3,13 +3,14 @@ import { ACCENTS } from '../types/Accents.types'
 
 export default function LanguageCarousel () {
   const skills = [
-    { name: 'React.js',         role: 'Frontend',         accent: 'cyan',   imageUrl: '/media/react-logo.png' },
-    { name: 'Node.js',          role: 'Backend',          accent: 'lime',   imageUrl: '/media/node-logo.png' },
-    { name: 'TypeScript',       role: 'Frontend & Backend',       accent: 'teal',   imageUrl: '/media/ts-logo.png' },
+      { name: '.NET Core',    role: 'Backend',         accent: 'purple', imageUrl: '/media/dotnet-logo.png' },
+      { name: 'Node.js',          role: 'Backend',          accent: 'lime',   imageUrl: '/media/node-logo.png' },
+      { name: 'SQL',    role: 'Backend',         accent: 'cyan', imageUrl: '/media/mysql-logo.png' },
+      { name: 'TypeScript',       role: 'Frontend & Backend',       accent: 'teal',   imageUrl: '/media/ts-logo.png' },
+      { name: 'React.js',         role: 'Frontend',         accent: 'cyan',   imageUrl: '/media/react-logo.png' },
     { name: 'GNU/Linux',        role: 'Operating System', accent: 'orange', imageUrl: '/media/linux-logo.png' },
     { name: 'CI/CD Pipelines',   role: 'DevOps',           accent: 'indigo', imageUrl: '/media/github-actions-logo.png' },
-    { name: 'Agile (SCRUM)',    role: 'Soft skills',         accent: 'orange', imageUrl: '/media/scrum-agile-logo.png' },
-    { name: 'SQL',    role: 'Backend',         accent: 'cyan', imageUrl: '/media/mysql-logo.png' },
+    { name: 'Agile (SCRUM)',    role: 'Soft skills',         accent: 'purple', imageUrl: '/media/scrum-agile-logo.png' },
   ]
 
   return (
