@@ -9,6 +9,7 @@ export default function LanguageCarousel () {
     { name: 'GNU/Linux',        role: 'Operating System', accent: 'orange', imageUrl: '/media/linux-logo.png' },
     { name: 'CI/CD Pipelines',   role: 'DevOps',           accent: 'indigo', imageUrl: '/media/github-actions-logo.png' },
     { name: 'Agile (SCRUM)',    role: 'Soft skills',         accent: 'orange', imageUrl: '/media/scrum-agile-logo.png' },
+    { name: 'SQL',    role: 'Backend',         accent: 'cyan', imageUrl: '/media/mysql-logo.png' },
   ]
 
   return (

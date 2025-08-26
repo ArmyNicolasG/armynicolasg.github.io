@@ -17,8 +17,9 @@ export default function ProjectsGrid() {
         { name: 'Node.js', accent: 'lime' as AccentKey, iconUrl: '/media/node-logo.png' },
         { name: 'React', accent: 'cyan' as AccentKey, iconUrl: '/media/react-logo.png' },
         { name: 'TypeScript', accent: 'teal' as AccentKey, iconUrl: '/media/ts-logo.png' },
-        { name: 'Docker', accent: 'indigo' as AccentKey, iconUrl: '/media/docker-logo.png' },
         { name: 'AWS', accent: 'orange' as AccentKey, iconUrl: '/media/aws-logo.png' },
+        { name: 'CI/CD Pipelines', accent: 'indigo' as AccentKey, iconUrl: '/media/aws-logo.png' },
+        { name: 'MySQL', accent: 'cyan' as AccentKey, iconUrl: '/media/mysql-logo.png' },
       ],
       links: {
         demo: 'https://santeriasvape.com',
