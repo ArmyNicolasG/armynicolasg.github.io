@@ -24,7 +24,43 @@ export default function ProjectsGrid() {
       links: {
         demo: 'https://santeriasvape.com',
       },
-    }
+    },
+    {
+      title: "Sales automated WhatsApp chatbot",
+      meta: 'Backend',
+      description:
+        "Automated chatbot for sales inquiries and real-time database access for Santería's vape.",
+      images: [
+        '/media/projects/santerias-chatbot-1.png',
+        '/media/projects/santerias-chatbot-2.png',
+        '/media/projects/santerias-chatbot-3.png'
+      ],
+      tech: [
+        { name: 'Node.js', accent: 'lime' as AccentKey, iconUrl: '/media/node-logo.png' },
+        { name: 'TypeScript', accent: 'teal' as AccentKey, iconUrl: '/media/ts-logo.png' },
+        { name: 'AWS', accent: 'orange' as AccentKey, iconUrl: '/media/aws-logo.png' },
+      ],
+      links: {
+        demo: 'https://santeriasvape.com',
+      },
+    },
+    {
+      title: "Gestor de eventos SENA",
+      meta: 'Full-Stack • Node.js + React • AWS',
+      description:
+        'Event and classroom manager application for SENA institutions.',
+      images: [
+        '/media/projects/eventos-landing-1.png'
+      ],
+      tech: [
+        { name: 'Node.js', accent: 'lime' as AccentKey, iconUrl: '/media/node-logo.png' },
+        { name: 'React', accent: 'cyan' as AccentKey, iconUrl: '/media/react-logo.png' },
+        { name: 'TypeScript', accent: 'teal' as AccentKey, iconUrl: '/media/ts-logo.png' },
+        { name: 'AWS', accent: 'orange' as AccentKey, iconUrl: '/media/aws-logo.png' },
+        { name: 'CI/CD Pipelines', accent: 'indigo' as AccentKey, iconUrl: '/media/aws-logo.png' },
+        { name: 'MySQL', accent: 'cyan' as AccentKey, iconUrl: '/media/mysql-logo.png' },
+      ]
+    },
   ]
 
   return (
