@@ -32,7 +32,7 @@ export default function ExperienceSection() {
       start: '2024-06',
       end: '2024-12',
       summary:
-        'Aplicaciones full-stack con manejo de permisos, e-commerce funcional y colaboración con equipos internacionales.',
+        'Development of Santería\'s Vape backend, database and AWS infraestructure and WhatsApp automated chatbot that can access database, show catalog and create orders from this messaging app.',
       tech: [
         { name: 'Node.js', accent: 'lime', iconUrl: '/media/node-logo.png' },
         { name: 'React', accent: 'cyan', iconUrl: '/media/react-logo.png' },

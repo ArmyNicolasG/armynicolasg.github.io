@@ -5,8 +5,8 @@ import { FaGithub } from "react-icons/fa";
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Certifications', href: '#certifications' },
   { name: 'Projects', href: '#projects' },
 ]
 
@@ -73,6 +73,8 @@ export default function NavBar() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="https://github.com/ArmyNicolasG"
+              target="_blank"
+                rel="noopener noreferrer"
               className="
                 inline-flex items-center gap-2 rounded-xl px-3 py-2
                 text-white hover:text-black
@@ -128,6 +130,7 @@ export default function NavBar() {
                         hover:bg-white
                         transition-colors
                       "
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </a>
@@ -136,6 +139,8 @@ export default function NavBar() {
                 <div className="py-6">
                   <a
                     href="https://github.com/ArmyNicolasG"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="
                       -mx-3 flex items-center gap-3 rounded-lg px-3 py-2
                       text-xl text-white/90 hover:text-black hover:bg-white

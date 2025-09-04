@@ -29,7 +29,7 @@ export default function ProjectsGrid() {
       title: "Sales automated WhatsApp chatbot",
       meta: 'Backend',
       description:
-        "Automated chatbot for sales inquiries and real-time database access for Santería's vape.",
+        "WhatsApp automated chatbot that can access database, show catalog and create orders from this messaging app for Santería\'s Vape.",
       images: [
         '/media/projects/santerias-chatbot-1.png',
         '/media/projects/santerias-chatbot-2.png',
