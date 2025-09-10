@@ -7,7 +7,7 @@ export default function ProjectsGrid() {
   const projects = [
     {
       title: "Santería's Vape",
-      meta: 'Full-Stack • Node.js + React • AWS',
+      meta: '2024',
       description:
         'Vaping E-commerce with orders and product inventory panel.',
       images: [
@@ -26,8 +26,8 @@ export default function ProjectsGrid() {
       },
     },
     {
-      title: "Sales automated WhatsApp chatbot",
-      meta: 'Backend',
+      title: "Automated sales WhatsApp chatbot",
+      meta: '2024',
       description:
         "WhatsApp automated chatbot that can access database, show catalog and create orders from this messaging app for Santería\'s Vape.",
       images: [
@@ -45,8 +45,26 @@ export default function ProjectsGrid() {
       },
     },
     {
+      title: "My own home server/VPS!",
+      meta: '2024 - Current',
+      description:
+        "Set up of my own VPS at home, with Ubuntu Server 22.04 and pfSense custom firewall to ensure security, also using Hyper-V platform for instances management",
+      images: [
+        '/media/projects/home-server-1.jpg',
+        '/media/projects/home-server-2.jpg'
+      ],
+      tech: [
+        { name: 'CI/CD Pipelines', accent: 'indigo' as AccentKey, iconUrl: '/media/aws-logo.png' },
+        { name: 'Linux', accent: 'orange' as AccentKey, iconUrl: '/media/linux-logo.png' },
+        { name: 'Networking', accent: 'cyan' as AccentKey, iconUrl: '/media/network-logo.png' },
+      ],
+      links: {
+        demo: 'https://santeriasvape.com',
+      },
+    },
+    {
       title: "Gestor de eventos SENA",
-      meta: 'Full-Stack • Node.js + React • AWS',
+      meta: '2024 - 2025',
       description:
         'Event and classroom manager application for SENA institutions.',
       images: [
