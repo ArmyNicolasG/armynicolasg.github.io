@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { Transition } from '@headlessui/react'
 
 export default function WelcomeMessage () {
@@ -40,7 +40,7 @@ export default function WelcomeMessage () {
 
   const infoContent =
     <>
-      <div className="mt-10 flex items-center justify-center gap-x-6">
+      <div className="my-10 flex items-center justify-center gap-x-6">
         <a
           href="https://github.com/ArmyNicolasG/"
           target="_blank"
@@ -51,16 +51,24 @@ export default function WelcomeMessage () {
         </a>
 
         <a
-            href="mailto:ngaleanor06@gmail.com"
+            href="mailto:megabyte.code.official@gmail.com"
             className="transition-all ease duration-200 rounded-md px-3.5 py-2.5 text-5xl font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
             target="_top"
         >
             <span className="sr-only">Email</span><FaEnvelope />
         </a>
+
+        <a
+            href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+            className="transition-all ease duration-200 rounded-md px-3.5 py-2.5 text-5xl font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+            target="_top"
+        >
+            <span className="sr-only">Linked-in</span><FaLinkedin />
+        </a>
       </div>
-      <button className="mt-12 text-xl text-white font-semibold hover:scale-105 transition-all ease-in-out duration-200">
+      <a href="#skills" className="text-xl text-white font-semibold hover:scale-105 transition-all ease-in-out duration-200">
         More about me <span aria-hidden="true">↓</span>
-      </button>
+      </a>
     </>;
 
   return (

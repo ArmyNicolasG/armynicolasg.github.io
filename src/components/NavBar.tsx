@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -70,7 +70,7 @@ export default function NavBar() {
           </div>
 
           {/* Right actions */}
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-2">
             <a
               href="https://github.com/ArmyNicolasG"
               target="_blank"
@@ -85,6 +85,21 @@ export default function NavBar() {
             >
               <FaGithub aria-hidden="true" className="text-xl" />
               <span className="text-sm font-semibold">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+              target="_blank"
+                rel="noopener noreferrer"
+              className="
+                inline-flex items-center gap-2 rounded-xl px-3 py-2
+                text-white hover:text-black
+                bg-white/10 hover:bg-white
+                border border-white/15
+                backdrop-blur-xl transition-all
+              "
+            >
+              <FaLinkedin aria-hidden="true" className="text-xl" />
+              <span className="text-sm font-semibold">LinkedIn</span>
             </a>
           </div>
         </nav>
@@ -149,6 +164,21 @@ export default function NavBar() {
                   >
                     <FaGithub aria-hidden="true" />
                     <span className="text-base font-semibold">GitHub</span>
+                  </a>
+                </div>
+                <div className="py-6">
+                  <a
+                    href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      -mx-3 flex items-center gap-3 rounded-lg px-3 py-2
+                      text-xl text-white/90 hover:text-black hover:bg-white
+                      transition-colors
+                    "
+                  >
+                    <FaLinkedin aria-hidden="true" />
+                    <span className="text-base font-semibold">LinkedIn</span>
                   </a>
                 </div>
               </div>
