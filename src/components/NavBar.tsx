@@ -87,7 +87,7 @@ export default function NavBar() {
               <span className="text-sm font-semibold">GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+              href="https://linkedin.com/in/nicolás-galeano-r-089a142a9"
               target="_blank"
                 rel="noopener noreferrer"
               className="
@@ -168,7 +168,7 @@ export default function NavBar() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+                    href="https://linkedin.com/in/nicolás-galeano-r-089a142a9"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="

@@ -59,7 +59,7 @@ export default function WelcomeMessage () {
         </a>
 
         <a
-            href="https://www.linkedin.com/in/nicolas-galeano-089a142a9/"
+            href="https://linkedin.com/in/nicolás-galeano-r-089a142a9"
             className="transition-all ease duration-200 rounded-md px-3.5 py-2.5 text-5xl font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
             target="_top"
         >
