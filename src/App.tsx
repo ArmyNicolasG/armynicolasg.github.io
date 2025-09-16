@@ -9,51 +9,51 @@ import ExperienceSection from './components/ExperienceSection.tsx';
 
 function App() {
 
-  const [isLoaded, setIsLoaded] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false)
 
-  useEffect(() => {
+    useEffect(() => {
 
-    setTimeout(() => {
-      setIsLoaded(true)
-    }, 2000)
+        setTimeout(() => {
+        setIsLoaded(true)
+        }, 2000)
 
-  }, [])
+    }, [])
 
-  return (
-     <>
-      <div className="mt-40 lg:mt-0 text-white h-screen mb-40">
+    return (
+        <>
+            <div className="mt-40 lg:mt-0 text-white h-screen mb-40">
 
-      { isLoaded &&
-          <Transition
-            appear={true}
-            show={ isLoaded }
-            enter="transition-all duration-700 ease-in-out"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-          >
-            <NavBar/>
-          </Transition>        
-      }
+            { isLoaded &&
+                <Transition
+                    appear={true}
+                    show={ isLoaded }
+                    enter="transition-all duration-700 ease-in-out"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                >
+                    <NavBar/>
+                </Transition>        
+            }
 
-        <WelcomeMessage />
-      { isLoaded &&
-          <Transition
-            appear={true}
-            show={ isLoaded }
-            enter="transition-all duration-700 ease-in-out"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-          >
-            <LanguageCarousel />
-            <ExperienceSection />
-            <ProjectsGrid />
-          </Transition>  
+                <WelcomeMessage />
+            { isLoaded &&
+                <Transition
+                    appear={true}
+                    show={ isLoaded }
+                    enter="transition-all duration-700 ease-in-out"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                >
+                    <LanguageCarousel />
+                    <ExperienceSection />
+                    <ProjectsGrid />
+                </Transition>  
 
-      }
+            }
 
-      </div>
-     </>
-  )
+            </div>
+        </>
+    )
 }
 
 export default App
